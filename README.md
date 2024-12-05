@@ -17,8 +17,7 @@ For installing Git on your device please follow this link
 ## Required technologies
 The solution is built using 
 - Asp`.`Net Core Web API
-#- `.`NET MAUI Blazor Hybrid App
-#-Blazor Web App
+
 
  
 ## Pre-requisites
@@ -31,13 +30,6 @@ The solution is built using
 git clone https://github.com/mchowlader/Inventory-Management.git
 ```
 ## Step-2: Install MSSQL
-
-### Step-3: Migration Apply[No need to others user, Migration alrady contain in the Infrastructure libray]
-#- dotnet ef migrations add ProductTable --context ProductContext --project Inventory.Infrastructure --startup-project Inventory.API
-
-## Step-3: Migration Update
-#- Update-Database -Context ApplicationDbContext -Project Inventory.Infrastructure -StartupProject Inventory.API
-#- Update-Database -Context ProductContext -Project Inventory.Infrastructure -StartupProject Inventory.API
 
 
 ## Note:
