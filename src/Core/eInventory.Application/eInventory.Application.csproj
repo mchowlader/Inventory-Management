@@ -8,18 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\eInventory.Domain\eInventory.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Features\Categories\Handler\Commands\" />
-    <Folder Include="Features\Categories\Request\Commands\" />
-    <Folder Include="Features\Products\Handlers\Commands\" />
-    <Folder Include="Features\Products\Request\Commands\" />
   </ItemGroup>
 
 </Project>

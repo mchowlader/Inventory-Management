@@ -6,5 +6,6 @@ public interface IGenericRepository<T> where T: class
     Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken);
     Task<T> AddAsync(T entity, CancellationToken cancellationToken);
     Task<T> UpdateAsync(T entity, CancellationToken cancellationToken);
-    Task<T> DeleteAsync(int id, CancellationToken cancellationToken);
+    Task<T> DeleteAsync(T entity, CancellationToken cancellationToken);
+    Task<bool> ExitsAsync(long id, CancellationToken cancellationToken);
 }

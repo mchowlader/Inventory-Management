@@ -18,7 +18,6 @@ For installing Git on your device please follow this link
 The solution is built using 
 - Asp`.`Net Core Web API
 
-
  
 ## Pre-requisites
 - Visual Studio 2022

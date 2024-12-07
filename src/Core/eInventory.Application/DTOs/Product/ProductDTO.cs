@@ -1,8 +1,9 @@
-﻿using eInventory.Application.DTOs.Common;
+﻿using eInventory.Application.DTOs.Category;
+using eInventory.Application.DTOs.Common;
 
-namespace eInventory.Application.DTOs.ProductDTO;
+namespace eInventory.Application.DTOs.Product;
 
-public class ProductListDTO : BaseDTO
+public class ProductDTO : BaseDTO
 {
     public string Name { get; set; } = string.Empty;
     public string? Description { get; set; }

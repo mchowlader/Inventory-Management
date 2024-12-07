@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using eInventory.Application.DTOs;
-using eInventory.Application.DTOs.ProductDTO;
+using eInventory.Application.DTOs.Category;
+using eInventory.Application.DTOs.Product;
 using eInventory.Domain.Entities;
 
 namespace eInventory.Application.Profiles;

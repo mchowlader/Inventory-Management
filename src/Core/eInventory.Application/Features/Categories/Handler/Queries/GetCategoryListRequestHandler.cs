@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using eInventory.Application.DTOs;
+using eInventory.Application.DTOs.Category;
 using eInventory.Application.Features.Categories.Request.Queries;
 using eInventory.Application.Persistence.Contracts;
 using MediatR;
