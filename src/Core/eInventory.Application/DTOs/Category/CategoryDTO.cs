@@ -2,7 +2,7 @@
 
 namespace eInventory.Application.DTOs.Category;
 
-public class CategoryDTO : BaseDTO
+public class CategoryDTO : BaseDTO, ICategoryDTO
 {
-    public string Name { get; set; } = string.Empty;
+    public required string Name { get; set; } 
 }

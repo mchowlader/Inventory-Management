@@ -8,7 +8,7 @@ public class ProductListDTO : BaseDTO
     public string Name { get; set; } = string.Empty;
     public string? Description { get; set; }
     public double Price { get; set; }
-    public CategoryDTO Category { get; set; } = new();
+    public required CategoryDTO Category { get; set; } 
     public long? CreateBy { get; set; }
     public DateTime? CreatedDate { get; set; }
     public long? UpdateBy { get; set; }

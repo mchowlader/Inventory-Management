@@ -5,5 +5,5 @@ namespace eInventory.Application.Features.Categories.Request.Commands;
 
 public class CreateCategoryCommand : IRequest<long>
 {
-    public CreateCategoryDTO CategoryDTO { get; set; }
+    public required CreateCategoryDTO CategoryDTO { get; set; }
 }

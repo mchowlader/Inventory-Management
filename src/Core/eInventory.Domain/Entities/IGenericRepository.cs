@@ -1,6 +1,6 @@
 ﻿namespace eInventory.Domain.Entities;
 
-public interface IGenericRepository<T>where T: class 
+public interface IGenericRepository<T> where T: class 
 {
     Task<T> GetAsync(int id, CancellationToken cancellationToken);
     Task<IEnumerable<T>> GetAllAsync(CancellationToken cancellationToken);

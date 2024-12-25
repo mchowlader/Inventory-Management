@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using eInventory.Application.DTOs.Product.Validator;
+using eInventory.Application.Exceptions;
 using eInventory.Application.Features.Products.Request.Commands;
 using eInventory.Application.Persistence.Contracts;
 using eInventory.Domain.Entities;
@@ -15,12 +16,13 @@ public class CreateProductCommandHandler(IProductRepository repository, IMapper 
 
     public async Task<long> Handle(CreateProductCommand request, CancellationToken cancellationToken)
     {
-        var validator = new CreateProductValidator(_repository);
+        var validator = new CreateProductDTOValidator(_repository);
         var validationResult = await validator
             .ValidateAsync(request.ProductDTO, cancellationToken)
             .ConfigureAwait(false);
 
-        if (validationResult.IsValid == false) throw new Exception();
+        if (validationResult.IsValid == false) 
+            throw new ValidationException(validationResult);
 
         var product = _mapper.Map<Product>(request.ProductDTO);
         product = await _repository

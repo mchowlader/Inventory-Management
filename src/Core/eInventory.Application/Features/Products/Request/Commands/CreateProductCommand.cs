@@ -5,5 +5,5 @@ namespace eInventory.Application.Features.Products.Request.Commands;
 
 public class CreateProductCommand : IRequest<long>
 {
-    public CreateProductDTO ProductDTO { get; set; }
+    public required CreateProductDTO ProductDTO { get; set; }
 }

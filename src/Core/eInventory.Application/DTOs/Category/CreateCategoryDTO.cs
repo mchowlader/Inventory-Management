@@ -1,6 +1,8 @@
-﻿namespace eInventory.Application.DTOs.Category;
+﻿using eInventory.Application.DTOs.Common;
 
-public class CreateCategoryDTO
+namespace eInventory.Application.DTOs.Category;
+
+public class CreateCategoryDTO : BaseDTO, ICategoryDTO
 {
-    public string Name { get; set; } = string.Empty;
+    public required string Name { get; set; }
 }

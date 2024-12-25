@@ -6,5 +6,5 @@ namespace eInventory.Application.Features.Products.Request.Commands;
 public class UpdateProductCommand : IRequest<Unit>
 {
     public long Id { get; set; }
-    public ProductDTO ProductDTO { get; set; }
+    public required ProductDTO ProductDTO { get; set; }
 }

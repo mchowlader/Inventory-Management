@@ -1,15 +1,12 @@
-﻿using eInventory.Application.DTOs.Product;
-using eInventory.Application.Persistence.Contracts;
+﻿using eInventory.Application.Persistence.Contracts;
 using FluentValidation;
 
 namespace eInventory.Application.DTOs.Product.Validator;
 
-public class CreateProductValidator : AbstractValidator<CreateProductDTO>
+public class IProductDTOValidator : AbstractValidator<IProductDTO>
 {
     private readonly IProductRepository _repository;
-    private IProductRepository repository;
-
-    public CreateProductValidator(IProductRepository repository)
+    public IProductDTOValidator(IProductRepository repository)
     {
         _repository = repository;
 
