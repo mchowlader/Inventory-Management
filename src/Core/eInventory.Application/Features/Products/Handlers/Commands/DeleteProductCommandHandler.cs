@@ -21,13 +21,13 @@ public class DeleteProductCommandHandler(IProductRepository repository)
         if (product is null)
         {
             var errors = new List<string>() { $"Product with ID {request.Id} was not found." };
-            return Result<Unit>.Failure(errors);
+            return Result<Unit>.Failure(errors, "Delete Failed");
         }
 
         await _repository
             .DeleteAsync(product, cancellationToken)
             .ConfigureAwait(false);
 
-        return Result<Unit>.Success(Unit.Value);
+        return Result<Unit>.Success(Unit.Value, "Delete Successfully");
     }
 }
