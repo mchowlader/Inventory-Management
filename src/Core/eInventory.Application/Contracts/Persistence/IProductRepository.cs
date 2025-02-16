@@ -1,6 +1,6 @@
 ﻿using eInventory.Domain.Entities;
 
-namespace eInventory.Application.Persistence.Contracts;
+namespace eInventory.Application.Contracts.Persistence;
 
 public interface IProductRepository : IGenericRepository<Product>
 {

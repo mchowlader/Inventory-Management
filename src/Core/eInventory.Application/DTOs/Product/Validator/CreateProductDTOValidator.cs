@@ -1,4 +1,4 @@
-﻿using eInventory.Application.Persistence.Contracts;
+﻿using eInventory.Application.Contracts.Persistence;
 using FluentValidation;
 
 namespace eInventory.Application.DTOs.Product.Validator;

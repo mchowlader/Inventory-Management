@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using eInventory.Application.DTOs.Category;
 using eInventory.Application.Features.Categories.Request.Queries;
-using eInventory.Application.Persistence.Contracts;
+using eInventory.Application.Contracts.Persistence;
 using MediatR;
 
 namespace eInventory.Application.Features.Categories.Handler.Queries;

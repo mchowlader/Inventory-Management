@@ -1,17 +1,15 @@
 ﻿using AutoMapper;
 using eInventory.Application.Common;
+using eInventory.Application.Contracts.Persistence;
 using eInventory.Application.DTOs.Product.Validator;
-using eInventory.Application.Exceptions;
 using eInventory.Application.Features.Products.Request.Commands;
-using eInventory.Application.Persistence.Contracts;
-using eInventory.Application.Response;
 using eInventory.Domain.Entities;
 using MediatR;
 
 namespace eInventory.Application.Features.Products.Handlers.Commands;
 
 public class CreateProductCommandHandler(IProductRepository repository, IMapper mapper)
-    : IRequestHandler<CreateProductCommand, Result<long>> 
+    : IRequestHandler<CreateProductCommand, Result<long>>
 {
     public IProductRepository _repository { get; } = repository;
     public IMapper _mapper { get; } = mapper;

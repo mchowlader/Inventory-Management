@@ -1,7 +1,7 @@
 ﻿using eInventory.Application.Common;
 using eInventory.Application.Exceptions;
 using eInventory.Application.Features.Categories.Request.Commands;
-using eInventory.Application.Persistence.Contracts;
+using eInventory.Application.Contracts.Persistence;
 using eInventory.Domain.Entities;
 using MediatR;
 

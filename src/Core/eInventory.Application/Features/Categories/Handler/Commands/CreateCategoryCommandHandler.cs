@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
+using eInventory.Application.Contracts.Persistence;
 using eInventory.Application.DTOs.Category.Validator;
 using eInventory.Application.Exceptions;
 using eInventory.Application.Features.Categories.Request.Commands;
-using eInventory.Application.Persistence.Contracts;
 using eInventory.Domain.Entities;
 using MediatR;
 

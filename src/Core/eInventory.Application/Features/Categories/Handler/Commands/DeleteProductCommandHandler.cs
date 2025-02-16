@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using eInventory.Application.Common;
+using eInventory.Application.Contracts.Persistence;
 using eInventory.Application.Features.Categories.Request.Commands;
-using eInventory.Application.Persistence.Contracts;
 using MediatR;
 
 namespace eInventory.Application.Features.Categories.Handler.Commands;
